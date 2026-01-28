@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/e0f6264c93.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+    <div class="nav__content--wrapper">
+        <div class="logo">
+            <img src="./assets/OIP (1).jpg" class="logo">
+        </div>
+        <div class="nav__links">
+            <a href="#" class="nav__link home">Home</a>
+            <a href="#" class="nav__link Movie">Find a Movie</a>
+            <button class="contact">
+                <a class="btn-contact">Contact</a>
+            </button>
+        </div>
+    </div>
+    </header>
+    <section id="landing__page">
+        <div class="section__wrapper">
+            <div class="section__head">
+                <div class="section__header">
+                    <h1>Americas #1 Movie platform</h1>
+                </div>
+                <div class="section__header-para">
+                    <h2>Find A <span class="blue">Movie</span></h2>
+                </div>
+                <div class="input__wrapper">
+                    <input id="search-input" type="text" placeholder="Search by Movie Title..." onchange="searchChange()">
+                    <button class="not-loading" onclick="searchChange()">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <select id="filter-select" onchange="filterChange()">
+                        <option value="az">Title (A → Z)</option>
+                        <option value="za">Title (Z → A)</option>
+                        <option value="yr-asc">Year (Oldest → Newest)</option>
+                        <option value="yr-desc">Year (Newest → Oldest)</option>
+                    </select>
+                </div>
+                <div id="results" class="results"></div>
+                <img src="">
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer__content">
+            <p>&copy; 2026 Movie Platform. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
