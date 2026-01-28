@@ -323,3 +323,54 @@ Movie Filter Styles
 .status.error {
   color: #b91c1c;
 }
+
+/* RESPONSIVE DESIGN */
+
+/* Small Phones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 32px;
+        padding-left: 20px;
+    }
+    .section__header-para {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+    .input__wrapper input {
+        width: 70%;
+    }
+}
+/* LARGE PHONES */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+        padding-left: 50px;
+    }
+    .section__header-para {
+        font-size: 20px;
+        padding-left: 50px;
+    }
+    .input__wrapper input {
+        width: 60%;
+    }
+}
+/* LAPTOPS */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 48px;
+        padding-left: 80px;
+    }
+    .section__header-para {
+        font-size: 22px;
+        padding-left: 80px;
+    }
+    .input__wrapper input {
+        width: 55%;
+    }
+}
+/* COMPUTERS */
+@media (min-width: 1440px) {
+    .input__wrapper input {
+        width: 40%;
+    }
+}
